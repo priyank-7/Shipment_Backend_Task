@@ -24,6 +24,9 @@ public class StudentService {
     }
 
     public boolean addStudent(Student student) {
+
+        // TODO: Genereate a unique student id,
+        //  the carete User from student details and save as USER entity in database and with same id save student entity in database while login time use USER entity to login
         this.studentRepository.save(student);
         return true;
     }
