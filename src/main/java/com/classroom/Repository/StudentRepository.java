@@ -1,2 +1,9 @@
-package com.classroom.Repository;public class StudentRepository {
+package com.classroom.Repository;
+
+import com.classroom.Entiry.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface StudentRepository extends JpaRepository<Student, String> {
 }
