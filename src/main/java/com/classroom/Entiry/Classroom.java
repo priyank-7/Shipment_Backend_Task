@@ -16,6 +16,7 @@ import java.util.List;
 public class Classroom {
     @Id
     private String classroomId;
+    @Column(unique = true)
     private String classroomName;
     @ManyToMany
     private List<Student> enrolledStudents;
