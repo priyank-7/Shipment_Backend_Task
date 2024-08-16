@@ -1,6 +1,5 @@
 package com.classroom.Service;
 
-import com.classroom.Entiry.Classroom;
 import com.classroom.Entiry.Student;
 import com.classroom.Repository.ClassroomRepository;
 import com.classroom.Repository.StudentRepository;
@@ -27,14 +26,5 @@ public class StudentService {
     public boolean addStudent(Student student) {
         this.studentRepository.save(student);
         return true;
-    }
-
-//    public
-
-    public Object viewTasks(String studentId, String classroomId) {
-         this.classroomRepository.findById(classroomId)
-                .orElseThrow(() -> new RuntimeException("Classroom not found"));
-
-         return null;
     }
 }

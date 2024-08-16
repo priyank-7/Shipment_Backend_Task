@@ -14,4 +14,5 @@ public interface ClassroomRepository extends JpaRepository<Classroom, String> {
     List<Classroom> findClassroomByTeacher(Teacher teacher);
 
     List<Classroom> findClassroomByEnrolledStudentsContains(Student student);
+
 }

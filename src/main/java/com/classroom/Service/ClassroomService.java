@@ -50,7 +50,7 @@ public ClassroomService(ClassroomRepository classroomRepository, StudentReposito
                 .orElseThrow(() -> new RuntimeException("Classroom not found"));
         Student student = this.studentRepository.findById(studentId)
                 .orElseThrow(() -> new RuntimeException("Student not found"));
-        temp.getEnrolledStudents().add(student);
+
         this.classroomRepository.save(temp);
         return true;
     }

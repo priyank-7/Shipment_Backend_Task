@@ -30,16 +30,4 @@ public class StudentController {
         return ResponseEntity.ok(this.studentService.viewClassrooms(studentId));
     }
 
-//    View Tasks:
-//    Students can view tasks assigned to their classrooms.
-//    API Endpoint: GET /students/{studentId}/classrooms/{classroomId}/tasks
-//    Response: [{ "taskId": "string", "title": "string", "description": "string", "dueDate": "YYYY-MM-DD" }]
-
-//    @PreAuthorize("hasRole('ROLE_STUDENT')")
-//    @GetMapping("/{studentId}/classrooms/{classroomId}/tasks")
-//    public ResponseEntity<?> viewTasks(String studentId, String classroomId){
-//        return ResponseEntity.ok(this.studentService.viewTasks(studentId, classroomId));
-//    }
-
-
 }
