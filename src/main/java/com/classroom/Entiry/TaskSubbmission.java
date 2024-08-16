@@ -15,7 +15,6 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@IdClass(SubmissionId.class)
 public class TaskSubbmission {
 
     @Id

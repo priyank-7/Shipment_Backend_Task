@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public class CustomUserDetails implements UserDetails{
 
-    private User user;
+    private final User user;
 
     public CustomUserDetails(User user) {
         this.user = user;
@@ -22,8 +22,6 @@ public class CustomUserDetails implements UserDetails{
         return user.getRoles().stream()
                 .map(role -> new SimpleGrantedAuthority(role.getName()))
                 .toList();
-//        SimpleGrantedAuthority simpleGrantedAuthority = new SimpleGrantedAuthority(user.getRoles().forEach(role -> role.getName().toString()));
-//        return List.of(simpleGrantedAuthority);simpleGrantedAuthority
     }
 
     @Override

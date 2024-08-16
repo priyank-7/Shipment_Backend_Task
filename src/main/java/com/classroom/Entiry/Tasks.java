@@ -20,7 +20,6 @@ public class Tasks {
     private String title;
     private String description;
     private String dueDate;
-    private Boolean isSubmitted;
     @ManyToOne
     private Classroom classroom;
 

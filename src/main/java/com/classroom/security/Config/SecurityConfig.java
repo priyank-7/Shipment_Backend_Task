@@ -1,13 +1,11 @@
 package com.classroom.security.Config;
 
-import com.lms.Security.JWT.JwtAuthFilter;
-import io.jsonwebtoken.JwtException;
+import com.classroom.security.JWT.JwtAuthFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -31,7 +29,7 @@ public class SecurityConfig {
     private final JwtAuthFilter JwtAuthFilter;
 
     @Autowired
-    public SecurityConfig(UserDetailServiceImpl userDetailsService, com.lms.Security.JWT.JwtAuthFilter jwtAuthFilter){
+    public SecurityConfig(UserDetailServiceImpl userDetailsService, JwtAuthFilter jwtAuthFilter){
         this.userDetailsService = userDetailsService;
         JwtAuthFilter = jwtAuthFilter;
     }
