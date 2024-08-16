@@ -30,7 +30,7 @@ cd Shipment_Backend_Task
 
 **Configuration:**
 
-Before running the application, Configure database connection and Redis settings.
+Before running the application, Configure database connection settings.
 
 Database Configuration: Update the <code>application.yml</code> file with MySQL connection details
 
