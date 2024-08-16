@@ -16,5 +16,7 @@ public interface StudentRepository extends JpaRepository<Student, String> {
     @Query("SELECT c.classroomId,c.classroomName FROM Classroom c JOIN c.enrolledStudents s WHERE s.studentId = ?1")
     Object findClassroomsByStudentId(String studentId);
 
+    Boolean findByClassroomsContains(Classroom classroom);
+
 
 }
