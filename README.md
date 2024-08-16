@@ -1,6 +1,6 @@
 ## Classroom Task
 
-This project implements a REST API for a Learning Management System (LMS) built with Java and Spring.
+This project implements a REST API for a ClassConnect built with Java and Spring.
 
 ### Tech Stack
 
